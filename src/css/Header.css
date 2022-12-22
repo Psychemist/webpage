@@ -3,9 +3,29 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  height: 10vh;
+  height: 7vh;
+}
+
+.abo-logo {
+  height: 6vh;
+  margin-left: 10px;
+}
+
+.header-right-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+
 }
 
 .font-setter-wrapper {
   margin-right: 10px;
+  font-size: 12px;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  background-color: #fc7137;
 }

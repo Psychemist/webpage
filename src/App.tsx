@@ -1,31 +1,33 @@
 import React from 'react';
-// import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import About from './pages/About';
+import Activity from './pages/Activity';
+import Application from './pages/Application';
+import Bookmark from './pages/Bookmark';
+import Home from './pages/Home';
+import News from './pages/News';
 import Header from './static/Header';
 import SideBar from './static/SideBar';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-      <SideBar />
-      {/* <BrowserRouter>
-
-        <div className="navbar">
-          <Link to="game" className="link" > Game </Link>
-          <Link to="friend" className="link" > Friend </Link>
-          <Link to="community" className="link" > Community </Link>
-        </div>
-
+      <div className="content-container">
+        <SideBar />
         <Routes>
-          <Route path='/' element={<SignUp />} />
-          <Route path='/home' element={<Game />} />
-          <Route path='/friend' element={<FriendList />} />
-          <Route path='/community' element={<Community />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/activity' element={<Activity />} />
+          <Route path='/application' element={<Application />} />
+          <Route path='/bookmark' element={<Bookmark />} />
+          <Route path='/news' element={<News />} />
         </Routes>
+      </div>
+    </>
 
-      </BrowserRouter> */}
-    </div>
   );
 }
 
