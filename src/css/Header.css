@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 10vh;
+}
+
+.font-setter-wrapper {
+  margin-right: 10px;
+}
