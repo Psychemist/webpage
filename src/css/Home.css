@@ -17,6 +17,7 @@
 
 .subpage-indicator {
   width: 85%;
+  font-size: 12px;
 }
 
 .tab-menu {
@@ -29,29 +30,19 @@
   background-color: #f8f8f8;
 }
 
-.tab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: cyan;
-  font-size: 12px;
-  width: 25%;
-  height: 100%;
-  text-align: center;
-}
 
 .subpage-wrapper {
   display: flex;
   justify-content: center;
   height: 90%;
   width: 100%;
-  background-color: pink;
 }
 
 .subpage-content {
   width: 85%;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
 
 .page-footer {

@@ -1,0 +1,155 @@
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+}
+
+.tab:hover {
+  cursor: pointer;
+}
+
+.activity-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+
+}
+
+.banner-image-wrapper {
+  height: 120px;
+  width: 98%;
+  padding: 5px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 98%;
+  height: 7%;
+  border-bottom: 1px solid grey;
+  gap: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.section-title:hover {
+  cursor: pointer;
+}
+
+.section-detail-container {
+  width: 95%;
+}
+
+.section-detail-title-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.section-detail-title-symbol {
+  background-color: #1ebbb4;
+  width: 20px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.section-detail-title {
+  width: 100%;
+  color: #1ebbb4;
+}
+
+.section-detail-content-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.section-content {
+  width: 90%;
+}
+
+
+.activity-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  font-size: 12px;
+}
+
+.detail-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  margin: 20px;
+
+}
+
+.title-box {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #1ebbb4;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.activity-title-box {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ff89a6;
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+
+.box-title-text {
+  color: white
+}
+
+.highlights-wrapper {
+  background-color: #f7f7f7;
+  width: 100%;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 80px;
+
+}
+
+.highlight-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.highlight-caption {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  height: 80px;
+}
