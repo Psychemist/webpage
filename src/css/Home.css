@@ -61,7 +61,8 @@
   border-top-right-radius: 3px;
 }
 
-.tab:hover {
+.tab:hover,
+.active-tab:hover {
   cursor: pointer;
 }
 

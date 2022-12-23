@@ -36,15 +36,16 @@
   padding: 3px;
 }
 
-.section-title:hover {
-  cursor: pointer;
-}
-
 .active-section-title {
   box-sizing: border-box;
   padding: 3px;
   color: #1ebbb4;
   border-bottom: 3px solid #1ebbb4;
+}
+
+.section-title :hover,
+.active-section-title :hover {
+  cursor: pointer;
 }
 
 .section-detail-container {
