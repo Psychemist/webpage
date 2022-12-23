@@ -20,6 +20,10 @@
   font-size: 12px;
 }
 
+.subpage-title {
+  font-weight: bold;
+}
+
 .tab-menu {
   display: flex;
   justify-content: space-evenly;
@@ -30,6 +34,36 @@
   background-color: #f8f8f8;
 }
 
+.tab {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  color: grey;
+}
+
+.active-tab {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  border-top: 2px solid #ff6f9c;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.tab:hover {
+  cursor: pointer;
+}
 
 .subpage-wrapper {
   display: flex;

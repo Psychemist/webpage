@@ -48,9 +48,9 @@ export default function ActivityItem(props: Props) {
             <div className="highlights-wrapper">
               {props.item.highlights &&
                 props.item.highlights.map((item: any, index: number) => (
-                  <div className="highlight" >
-                    <img src={require(`../../assets/${item.photo}`)} alt="highlights photo" className="highlight-photo" />
-                    <div className="highlight-caption" key={index}><span>{item.caption}</span></div>
+                  <div key={index} className="highlight" >
+                    <img key={`photo_${index}`} src={require(`../../assets/${item.photo}`)} alt="highlights photo" className="highlight-photo" />
+                    <div className="highlight-caption" key={`caption_${index}`}><span>{item.caption}</span></div>
                   </div>
                 ))
               }
