@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './pages/About';
@@ -11,16 +11,27 @@ import Header from './static/Header';
 import SideBar from './static/SideBar';
 
 function App() {
+  const [fontSize, setFontSize] = useState(12)
+  const addFontSize = () => {
+    setFontSize(fontSize + 2)
+  }
+
+  const resetFontSize = () => {
+    setFontSize(12)
+  }
+
+  const minusFontSize = () => {
+    setFontSize(fontSize - 2)
+  }
+
   return (
     <>
-      <Header />
+      <Header addFontSize={addFontSize} minusFontSize={minusFontSize} resetFontSize={resetFontSize} />
       <div className="content-container">
         <SideBar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/home' element={<Home />} >
-
-          </Route>
+          <Route path='/' element={<Home fontSize={fontSize} />} />
+          <Route path='/home' element={<Home fontSize={fontSize} />} />
           <Route path='/about' element={<About />} />
           <Route path='/activity' element={<ActivitySearch />} />
           <Route path='/application' element={<Application />} />

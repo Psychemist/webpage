@@ -4,19 +4,17 @@ import Footer from '../../static/Footer'
 import { activityDetails } from '../../activityDetails'
 import ActivityItem from './ActivityItem'
 
-export default function Home() {
+export interface Props {
+  fontSize: number
+}
+
+export default function Home(props: Props) {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(1)
-  // const [tabMenuStatus, setTabMenuStatus] = useState<Object>()
-  // console.log("tabMenuStatus: ", tabMenuStatus)
 
   const selectTab = (index: number) => {
     setActiveTabIndex(index)
   }
 
-  useEffect(() => {
-
-
-  }, [activeTabIndex])
 
   return (
     <div className="page-container">
@@ -29,7 +27,7 @@ export default function Home() {
         </div>
       </div>
 
-      <ActivityItem item={activityDetails[activeTabIndex - 1]} />
+      <ActivityItem item={activityDetails[activeTabIndex - 1]} fontSize={props.fontSize} />
 
       <Footer />
 

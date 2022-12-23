@@ -19,34 +19,42 @@ export const activityDetails = [
     ],
     details: [
       {
+        sectionId: 1,
         title: "引言",
         text: "「引言」內文"
       },
       {
+        sectionId: 2,
         title: "計畫目標",
         text: "「計畫目標」內文"
       },
       {
+        sectionId: 3,
         title: "目標對象",
         text: "「目標對象」內文"
       },
       {
+        sectionId: 4,
         title: "甄選準則",
         text: "「甄選準則」內文"
       },
       {
+        sectionId: 5,
         title: "費用",
         text: "「費用」內文"
       },
       {
+        sectionId: 6,
         title: "申請方法",
         text: "「申請方法」內文"
       },
       {
+        sectionId: 7,
         title: "常見問題",
         text: "「常見問題」內文"
       },
       {
+        sectionId: 8,
         title: "查詢",
         text: "「計畫目標」內文"
       }

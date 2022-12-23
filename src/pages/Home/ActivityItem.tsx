@@ -3,15 +3,16 @@ import '../../css/ActivityItem.css'
 
 
 export interface Props {
-  item: any
+  item: any,
+  fontSize: number
 }
 
 export default function ActivityItem(props: Props) {
   const [sectionIndex, setSectionIndex] = useState(0)
   const selectSection = (index: number) => {
-    console.log("clicked on", index, ", section: ",)
     setSectionIndex(index)
   }
+
 
   return (
     <div className="subpage-wrapper">
@@ -24,7 +25,8 @@ export default function ActivityItem(props: Props) {
 
           <div className="section-menu">
             {props.item.details.map((item: any, index: number) => (
-              <div className="section-title" key={index} onClick={() => selectSection(index)}>{item.title}</div>
+              <div className={sectionIndex == item.sectionId - 1 ? "active-section-title" : "section-title"} key={index} onClick={() => selectSection(index)}><span>{item.title}</span></div>
+
             ))}
           </div>
           {props.item.details[sectionIndex]
@@ -35,7 +37,7 @@ export default function ActivityItem(props: Props) {
                 <div className="section-detail-title">{props.item.details[sectionIndex].title}</div>
               </div>
               <div className="section-detail-content-wrapper">
-                <div className="section-content">{props.item.details[sectionIndex].text}</div>
+                <div className="section-content" style={{ fontSize: `${props.fontSize}` }}>{props.item.details[sectionIndex].text}</div>
               </div>
             </div>}
         </div>
